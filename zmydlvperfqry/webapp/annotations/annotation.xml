@@ -113,7 +113,7 @@
                 </Annotation>
                 <Annotation Term="UI.PresentationVariant">
                     <Record Type="UI.PresentationVariantType">
-                        <PropertyValue Property="Text" String="{i18n>Default}"/>
+                        <PropertyValue Property="Text" String="{@i18n>default}"/>
                         <PropertyValue Property="SortOrder">
                             <Collection>
                                 <Record Type="Common.SortOrderType">
