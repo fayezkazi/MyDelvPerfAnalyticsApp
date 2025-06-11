@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../sap/zzc_delivperfanlytsqry_cds/$metadata">
+        <edmx:Include Namespace="ZZC_DELIVPERFANLYTSQRY_CDS" Alias="SAP"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="zzc_delivperfanlytsqry_cds_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CreationDateYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.Text" Path="CreationDateYear_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CreationDateYearQuarter">
+                <Annotation Term="Common.IsCalendarYearQuarter"/>
+                <Annotation Term="Common.Text" Path="CreationDateYearQuarter_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CreationDateYearMonth">
+                <Annotation Term="Common.IsCalendarYearMonth"/>
+                <Annotation Term="Common.Text" Path="CreationDateYearMonth_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrderDateYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.Text" Path="SalesOrderDateYear_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrderDateYearQuarter">
+                <Annotation Term="Common.IsCalendarYearQuarter"/>
+                <Annotation Term="Common.Text" Path="SalesOrderDateYearQuarter_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrderDateYearMonth">
+                <Annotation Term="Common.IsCalendarYearMonth"/>
+                <Annotation Term="Common.Text" Path="SalesOrderDateYearMonth_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrderDateYearWeek">
+                <Annotation Term="Common.IsCalendarYearWeek"/>
+                <Annotation Term="Common.Text" Path="SalesOrderDateYearWeek_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ReqdDelivDateYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.Text" Path="ReqdDelivDateYear_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ReqdDelivDateYearQuarter">
+                <Annotation Term="Common.IsCalendarYearQuarter"/>
+                <Annotation Term="Common.Text" Path="ReqdDelivDateYearQuarter_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ReqdDelivDateYearMonth">
+                <Annotation Term="Common.IsCalendarYearMonth"/>
+                <Annotation Term="Common.Text" Path="ReqdDelivDateYearMonth_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ReqdDelivDateYearWeek">
+                <Annotation Term="Common.IsCalendarYearWeek"/>
+                <Annotation Term="Common.Text" Path="ReqdDelivDateYearWeek_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CmtdDelivDateYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.Text" Path="CmtdDelivDateYear_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CmtdDelivDateYearQuarter">
+                <Annotation Term="Common.IsCalendarYearQuarter"/>
+                <Annotation Term="Common.Text" Path="CmtdDelivDateYearQuarter_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CmtdDelivDateYearMonth">
+                <Annotation Term="Common.IsCalendarYearMonth"/>
+                <Annotation Term="Common.Text" Path="CmtdDelivDateYearMonth_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CmtdDelivDateYearWeek">
+                <Annotation Term="Common.IsCalendarYearWeek"/>
+                <Annotation Term="Common.Text" Path="CmtdDelivDateYearWeek_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PlndGIDateYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.Text" Path="PlndGIDateYear_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PlndGIDateYearQuarter">
+                <Annotation Term="Common.IsCalendarYearQuarter"/>
+                <Annotation Term="Common.Text" Path="PlndGIDateYearQuarter_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PlndGIDateYearMonth">
+                <Annotation Term="Common.IsCalendarYearMonth"/>
+                <Annotation Term="Common.Text" Path="PlndGIDateYearMonth_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PlndGIDateYearWeek">
+                <Annotation Term="Common.IsCalendarYearWeek"/>
+                <Annotation Term="Common.Text" Path="PlndGIDateYearWeek_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/FiscalYear">
+                <Annotation Term="Common.IsCalendarYear"/>
+                <Annotation Term="Common.IsFiscalYear"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/FiscalPeriod">
+                <Annotation Term="Common.IsFiscalPeriod"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/P_ExchangeRateType">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/P_DisplayCurrency">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ID">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotaledProperties">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrder">
+                <Annotation Term="Common.SemanticObject" String="SalesOrder"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/Material">
+                <Annotation Term="Common.SemanticObject" String="Material"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/Product">
+                <Annotation Term="Common.SemanticObject" String="Material"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SoldToParty">
+                <Annotation Term="Common.SemanticObject" String="Customer"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ShipToParty">
+                <Annotation Term="Common.SemanticObject" String="Customer"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PayerParty">
+                <Annotation Term="Common.SemanticObject" String="Customer"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/BillToParty">
+                <Annotation Term="Common.SemanticObject" String="Customer"/>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CreationDate">
+                <Annotation Term="Common.Text" Path="CreationDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CreationTime">
+                <Annotation Term="Common.Text" Path="CreationTime_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/LastChangeDate">
+                <Annotation Term="Common.Text" Path="LastChangeDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/MaterialSubstitutionReason">
+                <Annotation Term="Common.Text" Path="MaterialSubstitutionReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SoldToPartyClassification">
+                <Annotation Term="Common.Text" Path="SoldToPartyClassification_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesOrderDate">
+                <Annotation Term="Common.Text" Path="SalesOrderDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SDDocumentReason">
+                <Annotation Term="Common.Text" Path="SDDocumentReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CustomerPurchaseOrderDate">
+                <Annotation Term="Common.Text" Path="CustomerPurchaseOrderDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/CommittedDeliveryDate">
+                <Annotation Term="Common.Text" Path="CommittedDeliveryDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SalesDocumentRjcnReason">
+                <Annotation Term="Common.Text" Path="SalesDocumentRjcnReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PricingDate">
+                <Annotation Term="Common.Text" Path="PricingDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ExchangeRateDate">
+                <Annotation Term="Common.Text" Path="ExchangeRateDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DeliveryBlockReason">
+                <Annotation Term="Common.Text" Path="DeliveryBlockReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/HeaderBillingBlockReason">
+                <Annotation Term="Common.Text" Path="HeaderBillingBlockReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/BillingDocumentDate">
+                <Annotation Term="Common.Text" Path="BillingDocumentDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ItemBillingBlockReason">
+                <Annotation Term="Common.Text" Path="ItemBillingBlockReason_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/FixedValueDate">
+                <Annotation Term="Common.Text" Path="FixedValueDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallSDProcessStatus">
+                <Annotation Term="Common.Text" Path="OverallSDProcessStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallPurchaseConfStatus">
+                <Annotation Term="Common.Text" Path="OverallPurchaseConfStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallSDDocumentRejectionSts">
+                <Annotation Term="Common.Text" Path="OverallSDDocumentRejectionSts_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotalBlockStatus">
+                <Annotation Term="Common.Text" Path="TotalBlockStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallDelivConfStatus">
+                <Annotation Term="Common.Text" Path="OverallDelivConfStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallTotalDeliveryStatus">
+                <Annotation Term="Common.Text" Path="OverallTotalDeliveryStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallDeliveryStatus">
+                <Annotation Term="Common.Text" Path="OverallDeliveryStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallDeliveryBlockStatus">
+                <Annotation Term="Common.Text" Path="OverallDeliveryBlockStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallOrdReltdBillgStatus">
+                <Annotation Term="Common.Text" Path="OverallOrdReltdBillgStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallBillingBlockStatus">
+                <Annotation Term="Common.Text" Path="OverallBillingBlockStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotalCreditCheckStatus">
+                <Annotation Term="Common.Text" Path="TotalCreditCheckStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/HdrGeneralIncompletionStatus">
+                <Annotation Term="Common.Text" Path="HdrGeneralIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OverallPricingIncompletionSts">
+                <Annotation Term="Common.Text" Path="OverallPricingIncompletionSts_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/HeaderDelivIncompletionStatus">
+                <Annotation Term="Common.Text" Path="HeaderDelivIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/HeaderBillgIncompletionStatus">
+                <Annotation Term="Common.Text" Path="HeaderBillgIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OvrlItmGeneralIncompletionSts">
+                <Annotation Term="Common.Text" Path="OvrlItmGeneralIncompletionSts_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OvrlItmBillingIncompletionSts">
+                <Annotation Term="Common.Text" Path="OvrlItmBillingIncompletionSts_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OvrlItmDelivIncompletionSts">
+                <Annotation Term="Common.Text" Path="OvrlItmDelivIncompletionSts_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SDProcessStatus">
+                <Annotation Term="Common.Text" Path="SDProcessStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DeliveryConfirmationStatus">
+                <Annotation Term="Common.Text" Path="DeliveryConfirmationStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PurchaseConfirmationStatus">
+                <Annotation Term="Common.Text" Path="PurchaseConfirmationStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotalDeliveryStatus">
+                <Annotation Term="Common.Text" Path="TotalDeliveryStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DeliveryStatus">
+                <Annotation Term="Common.Text" Path="DeliveryStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DeliveryBlockStatus">
+                <Annotation Term="Common.Text" Path="DeliveryBlockStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/OrderRelatedBillingStatus">
+                <Annotation Term="Common.Text" Path="OrderRelatedBillingStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/BillingBlockStatus">
+                <Annotation Term="Common.Text" Path="BillingBlockStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ItemGeneralIncompletionStatus">
+                <Annotation Term="Common.Text" Path="ItemGeneralIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ItemBillingIncompletionStatus">
+                <Annotation Term="Common.Text" Path="ItemBillingIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/PricingIncompletionStatus">
+                <Annotation Term="Common.Text" Path="PricingIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/ItemDeliveryIncompletionStatus">
+                <Annotation Term="Common.Text" Path="ItemDeliveryIncompletionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SDDocumentRejectionStatus">
+                <Annotation Term="Common.Text" Path="SDDocumentRejectionStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotalSDDocReferenceStatus">
+                <Annotation Term="Common.Text" Path="TotalSDDocReferenceStatus_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/NumberOfIncomingSlsOrderItems">
+                <Annotation Term="Common.Text" Path="NumberOfIncomingSlsOrderItems_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/IncomingSalesOrdersNetAmtInDC">
+                <Annotation Term="Common.Text" Path="IncomingSalesOrdersNetAmtInDC_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/EarliestReqdDelivDate">
+                <Annotation Term="Common.Text" Path="EarliestReqdDelivDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/EarliestPlndGIDate">
+                <Annotation Term="Common.Text" Path="EarliestPlndGIDate_T">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/NmbrOfDlvrdAsReqdSlsDocItems">
+                <Annotation Term="Common.Text" Path="NmbrOfDlvrdAsReqdSlsDocItems_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DelivToReqdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="DelivToReqdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/MaxDelivToReqdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="MaxDelivToReqdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotDelivToReqdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="TotDelivToReqdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/AvgDelivToReqdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="AvgDelivToReqdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SlsDocItemsDlvrdAsReqdRatio">
+                <Annotation Term="Common.Text" Path="SlsDocItemsDlvrdAsReqdRatio_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/NmbrOfShippedAsPlndSlsDocItems">
+                <Annotation Term="Common.Text" Path="NmbrOfShippedAsPlndSlsDocItems_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/MaxGIToPlndGIDelayInDays">
+                <Annotation Term="Common.Text" Path="MaxGIToPlndGIDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotGIToPlndGIDelayInDays">
+                <Annotation Term="Common.Text" Path="TotGIToPlndGIDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/AvgGIToPlndGIDelayInDays">
+                <Annotation Term="Common.Text" Path="AvgGIToPlndGIDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SlsDocItemsShippedAsPlndRatio">
+                <Annotation Term="Common.Text" Path="SlsDocItemsShippedAsPlndRatio_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/NrOfDelivCmtdSlsDocItems">
+                <Annotation Term="Common.Text" Path="NrOfDelivCmtdSlsDocItems_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/NrOfDlvrdAsCmtdSlsDocItems">
+                <Annotation Term="Common.Text" Path="NrOfDlvrdAsCmtdSlsDocItems_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/DelivToCmtdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="DelivToCmtdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/MaxDelivToCmtdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="MaxDelivToCmtdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/TotDelivToCmtdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="TotDelivToCmtdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/AvgDelivToCmtdDelivDelayInDays">
+                <Annotation Term="Common.Text" Path="AvgDelivToCmtdDelivDelayInDays_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult/SlsDocItemsDlvrdAsCmtdRatio">
+                <Annotation Term="Common.Text" Path="SlsDocItemsDlvrdAsCmtdRatio_F">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate"/>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZC_DELIVPERFANLYTSQRY_CDS.ZZC_DELIVPERFANLYTSQRYResult">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrderItem"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SoldToParty"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SoldToPartyClassification"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Product"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="EarliestReqdDelivDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="DelivToReqdDelivDelayInDays"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="IncomingSalesOrdersNetAmtInDC"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+                        <Record Type="UI.DataFieldForIntentBasedNavigation">
+                            <PropertyValue Property="SemanticObject" String="Customer"/>
+                            <PropertyValue Property="Action" String="display"/>
+                            <PropertyValue Property="RequiresContext" Bool="false"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>SalesOrganization</PropertyPath>
+                        <PropertyPath>SoldToPartyClassification</PropertyPath>
+                        <PropertyPath>SoldToParty</PropertyPath>
+                        <PropertyPath>Product</PropertyPath>
+                        <PropertyPath>SlsDocItmDelivFlfmtSts</PropertyPath>
+                        <PropertyPath>ReqdDelivDateYearWeek</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
